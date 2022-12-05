@@ -28,6 +28,8 @@ return require('packer').startup({
         use('gruvbox-community/gruvbox')
         use('folke/tokyonight.nvim')
 
+        use('nvim-tree/nvim-web-devicons')
+
         -----------------------------------
         -- Treesitter: Better Highlights --
         -----------------------------------
@@ -73,6 +75,22 @@ return require('packer').startup({
                 after = 'telescope.nvim',
             },
         })
+
+        ---------------------
+        -- Navigation tree --
+        ---------------------
+
+        use({
+                'nvim-tree/nvim-tree.lua',
+                requires = {
+                    'nvim-tree/nvim-web-icons'    
+                },
+                cmd = { 'NvimTreeToggle', 'NvimTreeClose' },
+                config = function()
+                    require('plugins.nvim-tree')
+                end,
+            }
+        )
 
         -------------
         -- Haskell --

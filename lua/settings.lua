@@ -1,6 +1,9 @@
 local g = vim.g
 local o = vim.o
 
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
+
 -- Number of lines to keep above and below the cursor
 o.scrolloff = 8
 
@@ -43,6 +46,9 @@ o.jumpoptions = 'view'
 
 -- Makes neovim and host OS clipboard play nicely with each other
 o.clipboard = 'unnamedplus'
+
+-- Enable highlight groups
+vim.opt.termguicolors = true
 
 -- Map <leader> to space
 g.mapleader = ' '
