@@ -25,7 +25,7 @@ return require('packer').startup({
         -- Color Scheme --
         ------------------
 
-        -- use('gruvbox-community/gruvbox')
+        use('gruvbox-community/gruvbox')
         use('folke/tokyonight.nvim')
 
         -----------------------------------
