@@ -73,5 +73,11 @@ return require('packer').startup({
                 after = 'telescope.nvim',
             },
         })
+
+        -------------
+        -- Haskell --
+        -------------
+
+        use('neovimhaskell/haskell-vim')
     end
 })
