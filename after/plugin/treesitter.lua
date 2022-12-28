@@ -20,6 +20,7 @@ require('nvim-treesitter.configs').setup({
         'css',
         'json',
         'bash',
+        'help',
     },
     highlight = {
         enable = true,
