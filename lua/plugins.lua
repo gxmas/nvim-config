@@ -97,5 +97,20 @@ return require('packer').startup({
         -------------
 
         use('neovimhaskell/haskell-vim')
+
+        ----------------
+        -- ToggleTerm --
+        ----------------
+        --
+
+        use({
+                'akinsho/toggleterm.nvim', 
+                tag = '*', 
+                config = function()
+                    require("plugins.toggleterm")
+                end,
+            }
+        )
+
     end
 })
