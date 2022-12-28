@@ -83,7 +83,7 @@ return require('packer').startup({
         use({
                 'nvim-tree/nvim-tree.lua',
                 requires = {
-                    'nvim-tree/nvim-web-icons'    
+                    'nvim-tree/nvim-web-devicons'    
                 },
                 cmd = { 'NvimTreeToggle', 'NvimTreeClose' },
                 config = function()
