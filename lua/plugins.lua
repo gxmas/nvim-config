@@ -38,13 +38,15 @@ return require('packer').startup({
                 end,
             })
 
-        use('neovimhaskell/haskell-vim')
-
         use({
                 'akinsho/toggleterm.nvim', 
                 tag = '*',
             }
         )
+
+        use('neovim/nvim-lspconfig')
+
+        use('neovimhaskell/haskell-vim')
 
     end
 })
