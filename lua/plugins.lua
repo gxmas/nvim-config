@@ -13,12 +13,13 @@ return require('packer').startup({
 
         use('nvim-lua/plenary.nvim')
 
+        use('EdenEast/nightfox.nvim')
         -- use('gruvbox-community/gruvbox')
         -- use('folke/tokyonight.nvim')
-        use({
-                'rose-pine/neovim',
-                as = 'rose-pine',
-        })
+        -- use({
+        --         'rose-pine/neovim',
+        --         as = 'rose-pine',
+        -- })
 
         use('nvim-tree/nvim-web-devicons')
 
@@ -54,6 +55,8 @@ return require('packer').startup({
         use('saadparwaiz1/cmp_luasnip')
 
         use('neovimhaskell/haskell-vim')
+
+        use('cappyzawa/trim.nvim')
 
     end
 })
